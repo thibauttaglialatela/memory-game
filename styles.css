@@ -1,0 +1,11 @@
+body {
+  background-color: rgba(28, 28, 28, 0.741);
+}
+
+.grid {
+  width: 480px;
+  height: 480px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
