@@ -47,5 +47,20 @@ const cardArray = [
         name: 'a raycoon',
         image: 'images/raycoon.jpg'
     }
-
 ]
+
+cardArray.sort(() => 0.5 - Math.random());
+
+const grid = document.querySelector(".grid");
+
+function createBoard() {
+    for (let i = 0; i < 11; i++) {
+        const card = document.createElement('img');
+        card.setAttribute('src', 'images/moon.jpg');
+        card.setAttribute('alt', 'The moon');
+        card.setAttribute('data-id', i);
+        grid.append(card);
+        console.log(grid);
+    }
+}
+createBoard();
