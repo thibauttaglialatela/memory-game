@@ -1,11 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgba(28, 28, 28, 0.741);
+  line-height: 1;
 }
 
 .grid {
-  width: 480px;
-  height: 480px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+img {
+  width: 400px;
+  height: 300px;
+}
+
+h1, h3 {
+  color:#8FA2FF;
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+
+span {
+  font-weight: bold;
+
 }
